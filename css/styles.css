@@ -1,0 +1,10 @@
+:root{
+    --accent:#6c63ff;
+    --muted:#6b7280;
+    --bg:#f6f7fb;
+    --card:#fff
+}
+
+*{
+    box-sizing:border-box
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Melody Shop — Demo</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">Melody Shop</h1>
+            <nav>
+                <button class="nav-btn" data-view="home">Home</button>
+                <button class="nav-btn" data-view="cart">Cart (<span id="cart-count">0</span>)</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="view-home" class="view">
+            <div class="hero">
+                <h2>Discover great music & instruments</h2>
+                <p>Simple demo store — add items to the cart and checkout locally.</p>
+            </div>
+
+            <h3>Products</h3>
+            <div id="product-list" class="grid"></div>
+        </section>
+
+        <section id="view-cart" class="view" style="display:none">
+            <h2>Your Cart</h2>
+            <div id="cart-contents"></div>
+            <div id="cart-total" class="cart-total"></div>
+            <div style="margin-top:12px">
+                <button id="checkout" class="btn primary">Checkout</button>
+                <button id="clear-cart" class="btn">Clear</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">© Melody Shop — 2025</div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
