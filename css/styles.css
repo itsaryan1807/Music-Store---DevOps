@@ -1,10 +1,122 @@
-:root{
-    --accent:#6c63ff;
-    --muted:#6b7280;
-    --bg:#f6f7fb;
-    --card:#fff
+:root {
+    --accent: #6c63ff;
+    --muted: #6b7280;
+    --bg: #f6f7fb;
+    --card: #fff
 }
 
-*{
-    box-sizing:border-box
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Segoe UI, Roboto, Arial, sans-serif;
+    margin: 0;
+    background: var(--bg);
+    color: #111
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 16px
+}
+
+.site-header {
+    background: #fff;
+    border-bottom: 1px solid #e6e7ee
+}
+
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.logo {
+    margin: 12px 0;
+    font-size: 20px
+}
+
+nav .nav-btn {
+    margin-left: 8px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #e6e7ee;
+    background: #fff;
+    cursor: pointer
+}
+
+.hero {
+    background: linear-gradient(90deg, #eef2ff, transparent);
+    padding: 18px;
+    border-radius: 8px;
+    margin: 16px 0
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px
+}
+
+.card {
+    background: var(--card);
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(16, 24, 40, 0.04)
+}
+
+.thumb {
+    height: 120px;
+    border-radius: 6px;
+    background: linear-gradient(135deg, var(--accent), #ff7ab6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 28px
+}
+
+.card h4 {
+    margin: 12px 0 6px
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.btn {
+    background: #fff;
+    border: 1px solid #e6e7ee;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer
+}
+
+.btn.primary {
+    background: var(--accent);
+    color: #fff;
+    border: none
+}
+
+.cart-total {
+    margin-top: 12px;
+    font-weight: 700
+}
+
+.site-footer {
+    margin-top: 32px;
+    padding: 16px;
+    text-align: center;
+    color: var(--muted)
+}
+
+@media(min-width:800px) {
+    .thumb {
+        height: 140px
+    }
 }
