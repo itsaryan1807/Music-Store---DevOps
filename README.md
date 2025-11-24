@@ -18,4 +18,3 @@ Notes
 - This is a front-end demo; there is no backend. Cart data is stored locally in the browser.
 - Checkout is a demo action that clears the cart.
 
-Want changes? I can add images, search, or package this as a small static site.
